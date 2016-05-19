@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "AvatarView.h"
 
 @interface ViewController : NSViewController
 
+@property (strong) IBOutlet AvatarView *avatarView;
 
 @end
 

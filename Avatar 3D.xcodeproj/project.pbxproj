@@ -14,6 +14,10 @@
 		F0BEA1871CEC4DCE001494C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0BEA1851CEC4DCE001494C8 /* Main.storyboard */; };
 		F0BEA1921CEC4DCE001494C8 /* Avatar_3DTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BEA1911CEC4DCE001494C8 /* Avatar_3DTests.m */; };
 		F0BEA19D1CEC4DCE001494C8 /* Avatar_3DUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BEA19C1CEC4DCE001494C8 /* Avatar_3DUITests.m */; };
+		F0BEA1AC1CEC4EB5001494C8 /* AvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BEA1AB1CEC4EB5001494C8 /* AvatarView.m */; };
+		F0BEA1AE1CEC520D001494C8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BEA1AD1CEC520D001494C8 /* OpenGL.framework */; };
+		F0BEA1B31CEC5B53001494C8 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BEA1B21CEC5B53001494C8 /* SceneKit.framework */; };
+		F0BEA1B91CEC6703001494C8 /* head.obj in Resources */ = {isa = PBXBuildFile; fileRef = F0BEA1B81CEC6703001494C8 /* head.obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,11 @@
 		F0BEA1981CEC4DCE001494C8 /* Avatar 3DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Avatar 3DUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BEA19C1CEC4DCE001494C8 /* Avatar_3DUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Avatar_3DUITests.m; sourceTree = "<group>"; };
 		F0BEA19E1CEC4DCE001494C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0BEA1AA1CEC4EB5001494C8 /* AvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarView.h; sourceTree = "<group>"; };
+		F0BEA1AB1CEC4EB5001494C8 /* AvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarView.m; sourceTree = "<group>"; };
+		F0BEA1AD1CEC520D001494C8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		F0BEA1B21CEC5B53001494C8 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		F0BEA1B81CEC6703001494C8 /* head.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = head.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BEA1B31CEC5B53001494C8 /* SceneKit.framework in Frameworks */,
+				F0BEA1AE1CEC520D001494C8 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +90,8 @@
 		F0BEA16E1CEC4DCD001494C8 = {
 			isa = PBXGroup;
 			children = (
+				F0BEA1B21CEC5B53001494C8 /* SceneKit.framework */,
+				F0BEA1AD1CEC520D001494C8 /* OpenGL.framework */,
 				F0BEA1791CEC4DCD001494C8 /* Avatar 3D */,
 				F0BEA1901CEC4DCE001494C8 /* Avatar 3DTests */,
 				F0BEA19B1CEC4DCE001494C8 /* Avatar 3DUITests */,
@@ -99,6 +112,7 @@
 		F0BEA1791CEC4DCD001494C8 /* Avatar 3D */ = {
 			isa = PBXGroup;
 			children = (
+				F0BEA1B81CEC6703001494C8 /* head.obj */,
 				F0BEA17A1CEC4DCD001494C8 /* AppDelegate.h */,
 				F0BEA17B1CEC4DCD001494C8 /* AppDelegate.m */,
 				F0BEA1801CEC4DCD001494C8 /* ViewController.h */,
@@ -107,6 +121,8 @@
 				F0BEA1851CEC4DCE001494C8 /* Main.storyboard */,
 				F0BEA1881CEC4DCE001494C8 /* Info.plist */,
 				F0BEA17D1CEC4DCD001494C8 /* Supporting Files */,
+				F0BEA1AA1CEC4EB5001494C8 /* AvatarView.h */,
+				F0BEA1AB1CEC4EB5001494C8 /* AvatarView.m */,
 			);
 			path = "Avatar 3D";
 			sourceTree = "<group>";
@@ -240,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BEA1B91CEC6703001494C8 /* head.obj in Resources */,
 				F0BEA1841CEC4DCE001494C8 /* Assets.xcassets in Resources */,
 				F0BEA1871CEC4DCE001494C8 /* Main.storyboard in Resources */,
 			);
@@ -267,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0BEA1821CEC4DCD001494C8 /* ViewController.m in Sources */,
+				F0BEA1AC1CEC4EB5001494C8 /* AvatarView.m in Sources */,
 				F0BEA17F1CEC4DCD001494C8 /* main.m in Sources */,
 				F0BEA17C1CEC4DCD001494C8 /* AppDelegate.m in Sources */,
 			);
